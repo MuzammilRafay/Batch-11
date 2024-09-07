@@ -1,0 +1,14 @@
+google.com
+how to enable extension in windows 7,8,10,11
+
+
+view-> extension enable
+create index.html file
+open this file in to browser and notepad
+
+https://www.w3schools.com/html/html_intro.asp
+
+
+
+html tags
+<p>This is a paragraph </p>
