@@ -12,3 +12,39 @@ https://www.w3schools.com/html/html_intro.asp
 
 html tags
 <p>This is a paragraph </p>
+
+
+div html tag is like a box
+
+
+there are two types of elements
+1-block element
+A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+
+
+2-inline-block element
+An inline element only takes up as much width as necessary.
+
+
+
+
+https://www.w3schools.com/html/html_blocks.asp
+
+
+div is block level element
+
+
+https://www.w3schools.com/css/css_intro.asp
+
+CSS stands for Cascading Style Sheets
+
+
+
+id is used for selecting specific/unique element (1 par use hoga just)
+
+class is used for common element (1 se zada par use hoga)
+
+
+in css we use # for id & . for class
+
+
