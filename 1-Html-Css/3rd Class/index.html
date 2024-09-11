@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>3rd Layout</title>
+
+ <style>
+   *{
+    margin: 0px;
+   }
+   div{
+     border:1px solid red;
+   }
+   #header{
+     background-color: gray;
+     color:white;
+     text-align:center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     font-size:44px;
+     margin-bottom:10px;
+   }
+   #navbar {
+    background-color: gray;
+    color:white;
+    font-size:44px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align:center;
+    margin-bottom:10px;
+   }
+   #footer{
+    background-color:gray;
+    color:white;
+    font-size:44px;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:20px;
+   }
+   #parent{
+    margin-bottom:10px;
+   }
+   #left-side{
+    font-size:44px;
+    width: 29%;
+    float:left;
+    height: 250px;
+    background-color:gray;
+    color:white;
+    text-align:center;
+   }
+   #right-side{
+    font-size:44px;
+    width: 69%;
+    float:right;
+    height: 250px;
+    background-color:gray;
+    color:white;
+    text-align:center;
+   }
+
+   .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+   }
+ </style>
+</head>
+
+<body>
+<div id="header">This is a header</div>
+<div id="navbar">This is a navbar</div>
+<div id="parent" class="clearfix">
+ <div id="left-side">This is a left side</div>
+ <div id="right-side">This is a right side</div>
+</div>
+
+<div id="footer">This is a footer</div>
+
+</body>
+</html>

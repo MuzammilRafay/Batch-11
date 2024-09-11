@@ -48,3 +48,18 @@ class is used for common element (1 se zada par use hoga)
 in css we use # for id & . for class
 
 
+
+margin = element k bahar se space deta ha
+margin:20px = charo taraf se hoga space
+margin-top = sirf top se space hoga
+
+padding = element k andar se space deta ha
+padding:20px = charo taraf se hoga space
+padding-top = sirf top se space hoga
+
+
+* = all elements
+
+float = terna
+
+
