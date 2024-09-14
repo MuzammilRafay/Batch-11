@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>4th Class</title>
+ <style>
+ *{
+    margin: 0px;
+   }
+  body{
+   font-size:44px;
+  }
+  .common-styling{
+    background-color:gray;
+    color:white;
+    border: 1px solid red;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-bottom:10px;
+  }
+  .clearfix::after{
+   content: "";
+   display:table;
+   clear:both;
+  }
+  #left-side{
+   height: 250px;
+   float:left;
+   width: 29%;
+  }
+  #right-side{
+   height: 250px;
+   width: 69%;
+   float:right;
+  }
+  #parent{
+   border:1px solid red;
+  }
+ </style>
+</head>
+
+<body>
+<div class="common-styling" id="header">This is a header</div>
+<div class="common-styling" id="navbar">This is a navbar</div>
+
+<div id="parent" class="clearfix ">
+ <div id="left-side"  class="common-styling">
+  This is a left side
+ </div>
+ <div id="right-side"  class="common-styling">
+  This is a right side
+ </div>
+</div>
+
+
+<div  class="common-styling" id="footer">This is a footer</div>
+</body>
+</html>
