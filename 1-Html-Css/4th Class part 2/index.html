@@ -8,15 +8,12 @@
     padding: 0px;
     font-family: sans-serif;
    }
-   body{
-    padding-bottom: 80px;
-   }
    #main-image-section img{
     width:100%;
    }
    #header{
     background-color:#e7e7e7;
-    padding:20px 40px;
+    padding:20px 0px;
  
    }
    .clearfix::after{
@@ -43,8 +40,8 @@
     color:white;
     cursor: pointer;
    }
-   #inner-section{
-     width: 80%;
+   .inner-section{
+     width: 90%;
      margin: 0px auto;
    }
    .sub-items{
@@ -101,12 +98,51 @@
    .sub-items2 h3{
      color: #6a6a6a;
    }
+
+   #client-review{
+     padding: 50px 0px;
+     background: #efefef;
+     margin-top:20px;
+     text-align:center;
+   }
+
+   #client-review p{
+    color: #bcc2ca;
+    margin-top: 10px;
+   }
+   
+   #footer{
+     background-color: #1f1f1f;
+     color: #cacaca;
+     padding: 70px 0px;
+   }
+   
+   .footer-items{
+     width: 22%;
+     float:left;
+     margin-right:4%;
+    }
+    .footer-items:last-child{
+      margin-right: 0px;
+    }
+    .footer-items p{
+      margin-bottom: 20px;
+    }
+    .footer-items h2{
+      margin-bottom: 20px;
+      color: #6c6c6c;
+      font-size: 20px;
+    }
+    #footer-item-parent{
+      margin-bottom:20px;
+      border-bottom: 2px solid #353535;
+    }
   </style>
 </head>
 
 <body>
   <div id="header">
-    <div class="clearfix">
+    <div class="clearfix inner-section">
       <div id="logo">
         <img src="./assets/images/logo.png" alt="Logo" />
       </div>
@@ -127,7 +163,7 @@
     <img src="./assets/images/background-image.png" alt="Background image" />
   </div>
 
-  <div id="inner-section">
+  <div class="inner-section">
     <div id="item-container" class="clearfix">
 
        <div class="sub-items">
@@ -188,5 +224,48 @@
 
     </div>
   </div>
+
+   <div id="client-review">
+
+             <div class="inner-section">
+             <img src="./assets/images/quote.png" alt="quote" />
+              <p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at
+eget metus. Duis mollis, est non commodo luctus erat porttitor.</p>
+             </div>
+       </div>
+
+
+   <div id="footer" >
+     <div id="footer-sub-parent" class="inner-section">
+       <div id="footer-item-parent" class="clearfix">
+          <div class="footer-items">
+            <h2>Get In Touch</h2>
+            <p>Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna.</p>
+            <p>Moonshine Street No: 14/05 <br />
+              Light City, Jupiter <br />
+               0247 541 65 87 <br />
+              support@longwave.com</p>
+          </div>
+          <div class="footer-items">
+             <h2>Twitter</h2>
+             <p>Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+             <p>Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</p>
+             <p>Vestibulum id ligula porta euismod semper. Maecenas faucibus mollis.</p>
+          </div> 
+          <div class="footer-items">
+             <h2>Popular Posts</h2>
+             <p>Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor. 14 Nov, 2012</p>
+             <p>Scelerisque nisl consectetur et. 22 May, 2012</p>
+             <p>Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce 15 July, 2012</p>
+          </div>
+          <div class="footer-items">
+              <h2>About Us</h2>
+              <p>Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus curabitur blandit tempus.</p>
+          </div>
+       </div>
+       <p> &copy; 2022 Marble. All Right reserved. Theme by elemis.</p>
+     </div>
+   </div>
 </body>
 </html>
