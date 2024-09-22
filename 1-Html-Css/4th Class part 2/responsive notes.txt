@@ -1,0 +1,22 @@
+What is Responsive Web Design?
+
+Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):
+(har device par layout sahi dhekhe)
+
+(is tag ko lagana hai head k tag k andar)
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+(images on responsive)
+use perecentage widths like width: 100%;
+
+
+Media Queries
+(breakdown the css according to device size)
+(like agar apko koi css apply karni hai 800px k bad to ap media query lagaoge wo 800 k bad apply hojaegi)
+
+
+@media(max-width:800px){
+ .left{
+   width: 100%;
+ }
+}

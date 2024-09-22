@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marble Layout</title>
   <style>
    *{
@@ -137,6 +138,27 @@
       margin-bottom:20px;
       border-bottom: 2px solid #353535;
     }
+
+    @media(max-width:760px){
+       .sub-items, #logo, #navbar, #navbar ul li,.sub-items2,.footer-items{
+          float:none;
+          width:100%;
+          text-align:center;
+          margin: 0px;
+          margin-bottom:30px;
+       }
+       #logo{
+          
+          text-align:center;
+          margin-bottom:20px;
+       }
+       #navbar ul li:last-child{
+          margin-bottom:0px;
+       }
+       #footer-sub-parent{
+         text-align:center;
+       }
+    }
   </style>
 </head>
 
@@ -147,7 +169,7 @@
         <img src="./assets/images/logo.png" alt="Logo" />
       </div>
       <div id="navbar">
-        <ul>
+        <ul class="clearfix">
           <li>Home</li>
           <li>About</li>
           <li> Journal</li>
