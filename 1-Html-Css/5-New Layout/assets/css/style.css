@@ -5,6 +5,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  padding-bottom: 100px;
+}
+
 img {
   width: 100%;
 }
@@ -12,6 +16,7 @@ img {
 header {
   background-color: #151515;
   color: white;
+  padding: 10px 0px;
 }
 
 /* we can use classes multiple times on html template */
@@ -31,10 +36,13 @@ header {
   width: 29%;
   float: left;
 }
+#logo img {
+  max-width: 200px;
+}
 nav {
   width: 40%;
   float: right;
-  margin-top: 3%;
+  margin-top: 20px;
 }
 nav ul {
   /* margin-left: 48%; */
@@ -60,5 +68,43 @@ nav ul li:nth-child(even) {
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 400px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  color: white;
+  /* padding se height nai baregi */
+  box-sizing: border-box;
+}
+
+#main-image h1 {
+  font-size: 44px;
+}
+#main-image h3 {
+  margin: 20px 0px;
+  font-weight: 100;
+}
+#main-image button {
+  background: #41a308;
+  color: white;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+#services-container {
+  margin-top: 20px;
+}
+.service-item {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  text-align: center;
+  color: #888888;
+}
+.service-item:last-child {
+  margin-right: 0px;
+}
+.service-item h3 {
+  margin: 10px 0px;
+}
+.service-item p {
 }
