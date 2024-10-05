@@ -5,10 +5,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  padding-bottom: 100px;
-}
-
 img {
   width: 100%;
 }
@@ -107,4 +103,88 @@ nav ul li:nth-child(even) {
   margin: 10px 0px;
 }
 .service-item p {
+}
+.common-section {
+  margin: 50px 0px;
+}
+.common-section hr {
+  margin-top: -18px;
+}
+.common-section button {
+  background-color: #008000;
+  color: white;
+  padding: 10px 35px;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  min-width: 240px;
+}
+#client-profile {
+  width: 32%;
+  float: left;
+}
+#client-content {
+  width: 65%;
+  float: right;
+  color: #888888;
+  font-style: italic;
+}
+
+#client-reviews img {
+  width: 100%;
+}
+#client-content img {
+  width: 45px;
+  margin-bottom: 20px;
+}
+footer img {
+  width: auto;
+}
+#footer-fist-item {
+  width: 45%;
+  float: left;
+  color: #888888;
+}
+#footer-second-item {
+  width: 45%;
+  float: right;
+  text-align: right;
+}
+#footer-fist-item p {
+  position: relative;
+}
+#footer-fist-item p span {
+  position: absolute;
+  top: 8px;
+}
+#footer-social-icons {
+  margin-top: 90px;
+}
+
+@media (max-width: 1250px) {
+  nav,
+  nav ul li,
+  #logo,
+  .service-item,
+  #client-profile,
+  #client-content,
+  #footer-fist-item,
+  #footer-second-item {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  #main-image {
+    background-size: cover;
+  }
+  #footer-fist-item p {
+    text-align: left;
+    margin-left: 80px;
+  }
+  #footer-social-icons {
+    margin: 40px 0px;
+  }
 }
