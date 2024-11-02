@@ -1,0 +1,131 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  color: white;
+}
+header div {
+  border: 8px solid white;
+  border-radius: 30px;
+  padding: 6px 20px;
+}
+#main-section {
+  background-image: url("../images/banner.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+#main-container-inner-section {
+  background-color: #feb614;
+  color: white;
+  font-size: 75px;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 90px;
+}
+nav {
+  background-color: #f4f4f4;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 180px;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 20px 0px;
+}
+nav ul li:hover {
+  color: red;
+  cursor: pointer;
+}
+#mario-info {
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px 0px;
+}
+#mario-info h4 {
+  font-size: 40px;
+  color: red;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#mario-info-images {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0px 40px;
+}
+#mario-info-images img {
+  width: 100%;
+}
+#mario-info-images img:hover {
+  /* margin-top: 10px; */
+
+  transform: translateY(10px);
+  cursor: pointer;
+}
+#contact-us {
+  background-color: #f4f4f4;
+  padding: 30px 0px 60px 0px;
+  text-align: center;
+}
+#contact-us h4 {
+  font-weight: 700;
+  font-size: 30px;
+}
+#contact-us p {
+  margin: 10px 0px;
+}
+#contact-us input {
+  border-radius: 30px;
+  padding: 15px 30px;
+  border: none;
+}
+#contact-us input:focus {
+  outline: none;
+}
+#contact-us input::placeholder {
+  font-size: 15px;
+}
+footer {
+  background-color: red;
+  padding: 15px 0px;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  nav ul li {
+    border-bottom: 1px solid gray;
+  }
+  nav ul li:last-child {
+    border: none;
+  }
+}
+@media (max-width: 600px) {
+  #main-section {
+    background-size: 100% 100%;
+    background-position: bottom;
+    height: 300px;
+  }
+  #main-container-inner-section {
+    margin-top: 10px;
+    font-size: 50px;
+  }
+  #mario-info-images {
+    flex-direction: column;
+  }
+}
