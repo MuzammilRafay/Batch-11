@@ -145,3 +145,62 @@ main {
 .sport-movie-2 {
   flex-direction: row-reverse;
 }
+
+#download-section img {
+  width: 100%;
+}
+#download-body {
+  display: flex;
+  margin-top: -5px;
+}
+
+#download-body-1 {
+  background-color: var(--black);
+  color: var(--white);
+  flex-basis: 20%;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#download-body-1 p {
+  margin-bottom: 5px;
+}
+#download-body-2 {
+  background-color: var(--white);
+  flex-basis: 60%;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#download-body-2 h2 {
+  font-size: 1rem;
+}
+
+#download-body-3 {
+  background-color: var(--yellow);
+  flex-basis: 20%;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#download-body-3 h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.download-items {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+#cast-images img {
+  width: 60px;
+  border-radius: 50%;
+}
