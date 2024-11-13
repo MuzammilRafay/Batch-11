@@ -237,3 +237,39 @@ footer {
   text-align: center;
   padding: 15px 0px;
 }
+
+/* RESPONSIVE CSS */
+@media (max-width: 1251px) {
+  #movie-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1150px) {
+  .sport-movie,
+  .download-items,
+  #download-body {
+    flex-direction: column;
+  }
+  .sport-movie-section-two {
+    padding: 30px 0px;
+  }
+  main {
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+  #cast-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  header h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 580px) {
+  html {
+    font-size: 14px;
+  }
+}
