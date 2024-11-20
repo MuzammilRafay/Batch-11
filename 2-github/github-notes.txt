@@ -1,0 +1,11 @@
+Github definition
+github is free open source tool for saving your code
+
+lists of features:
+1.maintain file history
+2.branch (exact multiple copies files) (so multiple persons can work together)
+
+https://www.w3schools.com/git/git_intro.asp?remote=github
+
+
+https://git-scm.com/downloads
