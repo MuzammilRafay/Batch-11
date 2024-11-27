@@ -145,3 +145,40 @@ copy https link from repository
 
 
 git clone https://github.com/MuzammilRafay/Batch-11.git
+
+
+
+/*========================================
+=            GET UPDATED CODE FROM LIVE           =
+========================================*/
+
+git pull
+or
+git fetch && git pull
+
+/*=====  End of GET UPDATED CODE  ======*/
+
+
+
+/*========================================
+=            MERGE CODE FROM ANOTHER BRANCHS =
+========================================*/
+
+git merge branch-name
+
+if you see editor in terminal just enter this word and press enter
+
+:wq!
+
+just press enter after entering this word
+
+/*========================================
+=            YOU CAN CREATE PULL REQUEST FOR MERGING YOUR CODE AND REVIEWER CAN LEAVE THE COMMENTS TO IMPROVE THE CODE LINE BY LINE =
+========================================*/
+
+conflicts
+stash commands
+contribution
+fork
+
+
