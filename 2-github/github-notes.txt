@@ -91,3 +91,57 @@ git status
 git add .
 git commit -m "your message name"
 git push
+
+
+=========CHECK FILE CHANGES COMMAND====
+git status
+
+
+====Add All Files in to Github Commit=======
+git add filename
+or
+git add . (sari add kardo)
+
+=======Add Commit==============
+git commit -m "this is my second commit"
+
+
+=====Add All Commits To Live Repository====
+git push
+
+
+================Create Branch on Local System==============
+
+
+=========CHECK ALL LOCAL BRANCH=====
+git branch
+
+========Create New Branch=====
+git branch your-branch-name
+
+
+=======Switch/Change to Branch====
+git switch your-branch-name
+or
+git checkout your-branch-name
+
+
+
+=======Get All Branch From Live Repository=====
+git fetch
+
+
+
+========Switch/Change In to Live Branch===========
+git fetch && git checkout second-branch
+
+
+
+/*=================================
+=            Git Clone            =
+=================================*/
+
+copy https link from repository
+
+
+git clone https://github.com/MuzammilRafay/Batch-11.git
