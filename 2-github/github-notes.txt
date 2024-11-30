@@ -181,4 +181,66 @@ stash commands
 contribution
 fork
 
+====================================
+How conflict will come in your code
+====================================
+whenever users are working on same file so github will confuse when you are merging the code
+
+
+it will give you this type of error in your file
+
+
+<<<<<<< HEAD
+My Name is muzammil
+=======
+This is our second branch
+>>>>>>> second-branch
+
+
+
+
+My Name is muzammil
+
+This is our second branch
+
+
+
+/*========================================
+=            STASH (Temp files)           =
+========================================*/
+
+git add .
+git stash or git stash push -m "header task"
+
+git stash list
+
+----output should be in your terminal---
+stash@{0}: WIP on main: 5a6c832 merge this code
+
+
+
+//For Applying temp changes
+
+git stash apply stash@{0}
+git stash apply stash@{1}
+
+
+// All Stash Files are clear
+git stash clear
+
+
+//Specific Clear
+git stash drop stash@{0}
+
+===============================
+// pick another commit from another branch (so it will give you all work for this commit in to your current branch)
+
+git cherry-pickup commit-id
+
+https://www.w3schools.com/git/
+
+
+https://www.w3schools.com/git/git_remote_fork.asp?remote=github
+
+copy other user repository in to your account it is called fork
 
