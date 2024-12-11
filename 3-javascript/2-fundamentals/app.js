@@ -176,3 +176,113 @@ const total = parseInt(mousePrice) + 2; // 202
 
 const keyboardPrice = "2.2";
 const keyboardTotal = parseFloat(keyboardPrice) + 2;
+
+//2nd method to convert from string to number
+
+let testing_variable = new Number(mousePrice);
+testing_variable = new Number(true); // 1
+testing_variable = new Number(false); // 0
+testing_variable = new Number(null); // 0
+testing_variable = new Number("hello"); // NaN = Not a Number
+testing_variable = new Number([1, 2, 3, 4]); // Nan = Not a Number
+
+//Convert variables in to strings
+
+//String Methods
+testing_variable = new String(12121); // "12121"
+testing_variable = new String(true); // "true"
+
+//2nd method
+let someVariable = 1;
+testing_variable = someVariable.toString(); // "1"
+testing_variable = (12121).toString();
+testing_variable = "asdasdasd".toUpperCase(); //"ASDASDASD"
+
+//Convert variables in to boolean
+// Boolean methods
+testing_variable = new Boolean(1); //true
+testing_variable = new Boolean(0); //false
+testing_variable = new Boolean(null); //false
+testing_variable = new Boolean(""); //false
+testing_variable = new Boolean("asdasdasd"); //true
+
+testing_variable = {
+  name: "Muzammil",
+  designation: "Senoir Developer",
+  companyName: "Simplifi",
+};
+
+//Consoles Methods
+// console.log(testing_variable);
+// console.table(testing_variable);
+// console.warn(testing_variable);
+// console.error(testing_variable);
+// console.info(testing_variable);
+
+//arthmetic operators in javascript
+testing_variable = 5 + 5; // 10
+testing_variable = 5 - 5; // 0
+testing_variable = 5 / 5; // 1
+testing_variable = 5 % 5; // 0
+testing_variable = 5 * 5; // 25
+
+//Math Object
+testing_variable = Math.PI; // 3.14
+testing_variable = Math.E; // 2.7 =  Euler's number
+testing_variable = Math.round(2.5); // 3
+testing_variable = Math.round(2.4); // 2
+
+// The Math.floor() function returns the largest number less than or equal to a given number.
+/*==================================
+=            math floor            =
+==================================*/
+//for positive numbers
+testing_variable = Math.floor(2.4); //2
+testing_variable = Math.floor(2.3); //2
+testing_variable = Math.floor(2.59); //2
+testing_variable = Math.floor("2.3"); //2
+testing_variable = Math.floor(2); //2
+
+//for negative number
+testing_variable = Math.floor(-2.4); //-3
+testing_variable = Math.floor(-2.3); //-3
+testing_variable = Math.floor(-2.5); //-3
+/*=====  End of math floor  ======*/
+
+testing_variable = Math.pow(8, 4); // 8 * 8 * 8 * 8 // 4096
+testing_variable = Math.min(1, 2, 1, 36, 3, 4, 5, 6, 7, 8, 9); //return minimum value
+testing_variable = Math.max(1, 2, 1, 36, 3, 4, 5, 6, 7, 8, 9); //return maximum value
+testing_variable = Math.random() * 20 + 1;
+
+//String Concatination (text ko jorne ki bat hori hai)
+const firstName = "Muzammil";
+const lastName = "Mustaqeem";
+
+const fullName = firstName + " " + lastName; // Muzammil Mustaqeem
+// const testString =
+//   'Hello, World my name is \'Muzammil Mustaqeem and my age \'is 26';
+
+//line break chahiye text mein
+
+//wrong way
+// const testString =
+// "Hello, World my name
+// asdasdasd
+// asdasd
+// is'Muzammil Mustaqeem and my age 'is 26";
+
+//correct way
+// \n = line break
+const testString =
+  "Hello, World my name \n \n is'Muzammil Mustaqeem and my age 'is 26";
+
+const testString2 =
+  "Hello, World my name \n \n is'" + fullName + " and my age 'is 26";
+
+// Template Literal
+
+// `` = back tag
+// ${} = interpolation
+testing_variable = `Hello, World my name 
+
+is' ${fullName} and my age 'is 26`;
