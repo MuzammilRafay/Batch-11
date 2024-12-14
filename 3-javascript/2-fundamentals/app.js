@@ -286,3 +286,162 @@ const testString2 =
 testing_variable = `Hello, World my name 
 
 is' ${fullName} and my age 'is 26`;
+
+// COMPARISON
+const productName = "Briyani"; //string
+const customerLocation = "Karsaaz";
+let deliveryCharges = 0;
+
+if (customerLocation === "Nazimabad") {
+  deliveryCharges = 300;
+} else if (customerLocation === "North Karachi") {
+  deliveryCharges = 90;
+} else {
+  deliveryCharges = 400;
+}
+
+// if (customerLocation === "North Karachi") {
+//   deliveryCharges = 90;
+// }
+
+// console.log(deliveryCharges, "delivery Charges");
+
+// == equal to
+
+if (customerLocation == "North Karachi") {
+  deliveryCharges = 90;
+} else if (customerLocation == "Orangi Town") {
+  deliveryCharges = 300;
+} else {
+  deliveryCharges = 200;
+}
+
+// === three equal to / it will check data type also
+
+// if (1 === "1") { // it is checking the data type so it will always false
+if (1 == "1") {
+  //it will not check data type
+}
+
+//not equal to  !=
+
+// const mobile = "iphone";
+const mobile = "china";
+
+if (mobile != "china") {
+  console.log("mobile is not from china");
+} else {
+  console.log("your mobile is from china");
+}
+
+//not equal !== / so it will check the both type
+
+if (1 !== "1") {
+  // true
+  console.log("condition is  true");
+} else {
+  console.log("condition is false");
+}
+
+// GREATER OR LESS THAN
+
+// > greater than
+// < less than
+
+8 > 10; // false
+8 < 10; // true
+
+let id = 100;
+
+if (id < 40) {
+  console.log("id is less than from 40");
+}
+
+if (id > 40) {
+  console.log("id is greater than from 40");
+}
+
+//Logicl Operator
+
+// && AND = both condition should be true
+// || OR  = one condition should be true
+
+const laptop = "lenovo";
+const ram = "8gb";
+
+if (laptop == "hp" && ram == "8gb") {
+  console.log("i will purchase this laptop");
+} else {
+  console.log("i will not purchase this laptop");
+}
+
+if (laptop == "hp" || laptop == "dell") {
+  console.log("i will purchase this laptop");
+}
+
+//Ternary Operator
+//single line if else condition
+
+// if (laptop == "hp") {
+//   console.log("i will purchase this laptop");
+// } else {
+//   console.log("i will not purchase this laptop");
+// }
+
+//condition ? if-wala-kam : else-wala-kam;
+
+laptop == "hp" ? console.log("true") : console.log("false");
+
+// you can define conditions without braces
+if (id === 100) console.log("id is 100");
+
+if (id == 101) {
+  // console.log("101 is true");
+} else if (id == 100) {
+  // console.log("100 is true");
+} else if (id == 102) {
+  // console.log("102 is true");
+} else if (id == 103) {
+  // console.log("103 is true");
+} else if (id == 104) {
+  // console.log("104 is true");
+} else if (id == 105) {
+  // console.log("105 is true");
+} else if (id == 106) {
+  // console.log("106 is true");
+} else if (id == 107) {
+  // console.log("107 is true");
+} else {
+  // console.log("not match any conditions");
+}
+
+//or switch case
+
+switch (id) {
+  case 101:
+    // console.log("101 is true");
+    break;
+  case 100:
+    // console.log("100 is true");
+    break;
+  case 102:
+    // console.log("102 is true");
+    break;
+  case 103:
+    // console.log("103 is true");
+    break;
+  case 104:
+    // console.log("104 is true");
+    break;
+  case 105:
+    // console.log("105 is true");
+    break;
+  case 106:
+    // console.log("106 is true");
+    break;
+  case 107:
+    // console.log("107 is true");
+    break;
+  default:
+  // console.log("not match any conditions");
+}
