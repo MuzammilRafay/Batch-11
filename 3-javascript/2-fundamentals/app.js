@@ -318,8 +318,10 @@ if (customerLocation == "North Karachi") {
 
 // === three equal to / it will check data type also
 
-// if (1 === "1") { // it is checking the data type so it will always false
+// if (1 === "1") {
+//false // it is checking the data type so it will always false
 if (1 == "1") {
+  //true
   //it will not check data type
 }
 
@@ -445,3 +447,161 @@ switch (id) {
   default:
   // console.log("not match any conditions");
 }
+
+//Date Object
+
+const today = new Date();
+//client side time means your computer time
+
+// let birthday = new Date("9-10-1981");
+// let birthday = new Date("November 27 1996"); // month date year
+// let birthday = new Date("11/27/1996"); // month date year
+
+// console.log(today, "today");
+
+// let dateValue = today.getMonth() + 1;
+// dateValue = today.getFullYear();
+// dateValue = today.getMinutes();
+// dateValue = today.getHours();
+// dateValue = today.getSeconds();
+// dateValue = today.getMilliseconds();
+// dateValue = today.getTime();
+// dateValue = today.getDay();
+
+// console.log(dateValue, "dateValue");
+
+// console.log(today, "date value");
+// console.log(dateValue, "date value");
+// today.setMonth(1); // -1
+// today.setDate(2); // -1
+// today.setDate(2); // -1
+// today.setFullYear(1985);
+// today.setHours(3);
+// today.setMinutes(22);
+// today.setSeconds(25);
+
+// console.log(today, "date value");
+
+let day;
+
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+    break;
+}
+
+// console.log(day, "day");
+
+//Functions
+
+//A function is simply a “chunk” of code that
+//you can use over and over again, rather
+//than writing it out multiple times.Functions
+// enable programmers to break down or decompose
+//a problem into smaller chunks, each of which performs a particular task.
+
+// function getMyCustomDay(getDay) {
+//   let day;
+//   switch (getDay) {
+//     case 0:
+//       day = "Sunday";
+//       break;
+//     case 1:
+//       day = "Monday";
+//       break;
+//     case 2:
+//       day = "Tuesday";
+//       break;
+//     case 3:
+//       day = "Wednesday";
+//       break;
+//     case 4:
+//       day = "Thursday";
+//       break;
+//     case 5:
+//       day = "Friday";
+//       break;
+//     case 6:
+//       day = "Saturday";
+//       break;
+//   }
+//   return day;
+// }
+
+// console.log(getMyCustomDay(new Date().getDay()));
+
+function normalFunction() {
+  console.log(`normal function`);
+}
+
+normalFunction(); //callback
+
+//pass parameter
+function printMyName(myName) {
+  console.log(`My name is ${myName}`);
+}
+
+printMyName("Abdul wasay");
+printMyName("Ali khan");
+printMyName("Saad");
+
+function printFullName(firstName, lastName) {
+  console.log(`My full name is ${firstName} ${lastName}`);
+}
+
+printFullName("Abdul", "Wasay");
+
+function infiniteParameterFunction(firstParam, secondParam, ...restParams) {
+  console.log(firstParam, "first name");
+  console.log(secondParam, "second name");
+  console.log(restParams, "rest params"); //rest operator //[3, 4, 5, 6, 7, 8, 9]
+}
+
+infiniteParameterFunction(1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+//we can return things from functions
+
+function checkCondition() {
+  return false;
+  // return "abdul wasay";
+  // return [1, 2, 4, 5, 6];
+}
+
+const checkConditionVariable = checkCondition(); //checkCondition = false
+// const checkConditionVariable = false; //checkCondition = false
+
+// console.log(checkCondition(), "checkCondition()");
+
+// let counter = 0;
+// console.log(counter); // 0
+
+// function add() {
+//   counter += 1;
+//   console.log(counter);
+// }
+
+// add(); // 1
+// add(); // 2
+// add(); // 3
+// add(); // 4
+
+// counter = 10000
+// add()// 10001
